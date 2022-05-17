@@ -13,6 +13,7 @@ function cron() {
             $value[3] = get_GeleznayaMebel($value[2])["price"];
             $value[5] = get_Profsafe($value[4])["price"];
             actionData("UPDATE `catalog` SET `Price1`='{$value[3]}', `Price2`='{$value[5]}' WHERE `Name`='{$value[0]}'", "new");
+            print_r($value);
         }
     }
 }
