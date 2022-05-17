@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" >
+<head>
+	<title>Мебельный сейф Aiko TSN.50, описание, характеристики, цена, фотографии</title>
+<head>
+	<body>
+		<style>
+			.window {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				width: 100%;
+			}
+			.download, .unload {
+				flex: 0 0 50%;
+			}
+		</style>
+		<div class="window">
+			<div class="download">
+				<a href="./getActualCSV.php">Загрузить актуальную таблицу</a>
+			</div>
+			<div class="unload">
+				<form enctype="multipart/form-data" action="./parse_csv.php" method="POST">
+					<!-- Поле MAX_FILE_SIZE должно быть указано до поля загрузки файла -->
+					<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+					<!-- Название элемента input определяет имя в массиве $_FILES -->
+					Отправить этот файл: <input name="filename" type="file" accept="csv" />
+					<input type="submit" value="Отправить файл" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "db_host": "teana.cityhost.com.ua",
+    "db_user": "ch36c6a260",
+    "db_password": "dc61da3c77",
+    "db_name": "ch36c6a260_parser",
+    "timeout": 86400,
+    "time_work_cron": null
+}
